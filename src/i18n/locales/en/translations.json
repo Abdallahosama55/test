@@ -147,5 +147,37 @@
         "description": "Want to automatically transfer to a human? Book a meeting? Send AI texts? Update a CRM? Simply drop your preferred tool into Hams, and we’ll handle the integration seamlessly."
       }
     ]
-  }
+  },
+
+
+
+  
+    "itemSlider": [
+      {
+        "title": "Receptionist",
+        "prompt": "Hi, I'm Nora, a Gym Receptionist. I use an AI-powered phone agent to answer customer questions 24/7 in a natural Saudi dialect. Call me and see if I sound like a human!"
+      },
+      {
+        "title": "Customer Service",
+        "prompt": "Hi, I'm Ahmed, your Customer Service Agent. I'm available 24/7 to answer your inquiries using AI technology. Feel free to call and experience our seamless service."
+      },
+      {
+        "title": "Appointment",
+        "prompt": "Hi, I'm Sara, an AI Appointment Setter. I can help you schedule and remind you of appointments in no time, available 24/7 with a personal touch."
+      },
+      {
+        "title": "Survey",
+        "prompt": "Hi, I'm Faisal, your Survey Assistant. I conduct quick and accurate surveys in a conversational Saudi dialect, powered by AI. Call me to provide your feedback!"
+      },
+      {
+        "title": "Debt Collection",
+        "prompt": "Hi, I'm Khalid, an AI Debt Collection Agent. I work around the clock to remind customers about their outstanding payments in a friendly tone. Contact me anytime!"
+      },
+      {
+        "title": "Lead Qualification",
+        "prompt": "Hi, I'm Layla, an AI Lead Qualifier. I can help you identify and qualify leads efficiently using AI technology. Let's connect and grow your business."
+      }
+    ]
+  
+  
 }
