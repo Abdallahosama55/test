@@ -54,7 +54,7 @@ function SliderComponent() {
     dots: false,
     infinite: true,
     speed: 2000,
-    slidesToShow: 9,
+    slidesToShow: 7,
     slidesToScroll: 1.5,
     autoplay: true,
     autoplaySpeed: 0,
@@ -98,7 +98,7 @@ function SliderComponent() {
           <div key={image.id} className="flex justify-center h-11  items-center px-4"> {/* Added gap and centering */}
        <div className=" h-full  flex justify-center">
 
-       <img src={image.src} alt={image.alt} className=" rounded-xl px-6 py-2   scale-[1.8] filter " />
+       <img src={image.src} alt={image.alt} className=" rounded-xl px-6 py-2   scale-[1.8] filter grayscale " />
 
        </div>
           </div>
