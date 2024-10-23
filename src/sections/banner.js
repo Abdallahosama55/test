@@ -33,7 +33,7 @@ const Banner = () => {
     <section id="home" sx={styles.section}   >
       <div className="lg:mx-24 py-12 lg:py-2  ">
         <div className="grid justify-center h-full items-center lg:grid-cols-2 grid-cols-1  md:grid-cols-1  ">
-          <Box sx={styles.bannerContent} className="relative  lg:min-h-[70vh] flex flex-col md:p-12 p-8 lg:p-12  justify-center items- ">
+          <Box sx={styles.bannerContent} className="relative  lg:min-h-[70vh] flex flex-col md:p-12 p-8 pb-0 lg:p-12  justify-center items- ">
             {" "}
             {/* Add relative here */}
             <div className=" my-2 shadow-custom px-1 py-2 text-center  rounded-3xl bg-white text-sm ">
@@ -83,7 +83,7 @@ const Banner = () => {
             />
           </Box>
 
-          <div className="  relative md:p-12 p-7 lg:p-12  h-full">
+          <div className="  relative md:p-12 p-7 pt-1 lg:p-12  h-full">
             <SliderBanner />
 
           </div>
