@@ -86,7 +86,7 @@ function SliderComponent() {
   const { t } = useTranslation();
 
   return (
-    <div className="slider-container pointer-events-none"> {/* Disable pointer events */}
+    <div className="slider-container pointer-events-none "> {/* Disable pointer events */}
      {/* <Text as="h2" sx={styles.heading}>
         {renderStyledText(t('poweredby'))}
         <div className="w-full flex justify-center">
