@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import banner from "../assets/images/mobileframe.svg";
+import { StaticImage } from 'gatsby-plugin-image'; // Import StaticImage
 import BannerForm from "./BannerForm";
 import HeaderMobileBanner from "./HeaderMobileBanner";
 import { TypeAnimation } from "react-type-animation";
@@ -21,7 +22,7 @@ function SliderBanner() {
   }, []);
 
   return (
-    <div className="flex flex-col  h-full relative md:mx-16 lg:mx-16">
+    <div className="flex flex-col h-full relative md:mx-16 lg:mx-16">
       <div className="p-0 w-full rounded-[60px] faded-edges lg:mt-12 md:mt-12">
         {/* Use the new SliderComponent and pass necessary props */}
         <SliderButton
@@ -35,12 +36,17 @@ function SliderBanner() {
         <div
           className={`relative banner-div  overflow-hidden flex justify-center slide-up transition-opacity duration-300 `}
         >
-          <img
-            src={banner}
+          <div      className="flex w-full h-auto absolute top-0 left-0 z-0 object-cover">
+          <StaticImage
+            src="../assets/images/mobileframe.svg"
             alt="categories"
-            className="flex w-full h-auto absolute top-0 left-0 z-0 object-cover "
             onLoad={() => setIsImageLoaded(true)}
+         
+       
           />
+
+          </div>
+     
 
           {isImageLoaded ? (
             <div className="content-img  z-20 flex flex-col mb-[8px] mt-[30px] w-full lg:my-[40px] max-w-[80%] items-center text-xs justify-center text-start text-black">

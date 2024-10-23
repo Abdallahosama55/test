@@ -5,6 +5,7 @@ module.exports = {
     author: `team@Hams.AI`,
   },
   plugins: [
+    
   {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -52,8 +53,12 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+// Add image plugins here
+
+`gatsby-plugin-image`,
+`gatsby-transformer-sharp`,
+`gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
