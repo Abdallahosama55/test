@@ -57,9 +57,10 @@ body {
   inherits: false;
 }
 .cover-bg {
-  background-image: url("../assets/images/mobileframe.svg");
-  background-size: cover;
-  background-repeat: cover;
+  background-image: url("../assets/images/mobiles.svg");
+
+background:cover;
+
 }
 .box {
   @apply relative  rounded-xl; /* Main box styles */
@@ -78,7 +79,7 @@ body {
 /* Add these styles to your global.css or component's CSS */
 @keyframes slideUp {
   0% {
-    transform: translateY(100%);
+    transform: translateY(46%);
     opacity: 0;
   }
   100% {

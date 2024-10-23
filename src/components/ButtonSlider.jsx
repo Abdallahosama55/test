@@ -19,9 +19,9 @@ function SliderButton({ currentItems, selectedId, handleSelectId }) {
 
   useEffect(() => {
     // Simulate slider initialization delay
-
+    setTimeout(() => {
       setIsSliderInitialized(true);
-   
+    }, 500);
   }, []);
 
   return (
