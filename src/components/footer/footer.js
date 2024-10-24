@@ -1,66 +1,57 @@
-/** @jsx jsx */
-import { jsx, Flex, Box, Text, Container } from 'theme-ui';
-import { rgba } from 'polished';
+import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <Box as="footer" sx={styles.footer}>
-      <Container>
-        <Flex sx={styles.footerInner}>
-          <Flex sx={styles.copyright}>
-           {/* <Text as="span"><a href="/policyGuest" style={{color:"white"}}>الشروط و الاحكام  للعميل</a></Text> */}
-            <Text as="span">
-              &copy; Copyright by Hams.AI {new Date().getFullYear()}  
-            </Text>
-          </Flex>
-    
-        </Flex>
-      </Container>
-    </Box>
-  );
-}
+    <footer className="bg-[#8485E6] py-8 text-[#ffffff]">
+      <div className="w-full px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8 justify-center items-center">
+          
+          {/* Product Section */}
+          <div>
+            <h3 className="font-semibold mb-4">Product</h3>
+            <ul className="space-y-2">
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Speech-to-Text</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Real-Time Streaming</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Speech-to-text</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Audio Intelligence</li>
+            </ul>
+          </div>
 
-const styles = {
-  footer: {
-    background: " #8485E6", // Change to background
-    pt: [6],
-    pb: [6],
-    alignItems: 'center',
-    display: 'flex',
-    justifyContent: 'center'
-  },
-  footerInner: {
-    alignItems: 'center',
-    display: 'flex',
-    justifyContent: 'center',
-    flexDirection: ['column', null, null, null, 'row'],
-  },
-  copyright: {
-    alignItems: 'center',
-    flexDirection: ['column', null, null, null, 'row'],
-    span: {
-      color: rgba('#ffffff', 0.7),
-      fontSize: 1,
-      lineHeight: '18px',
-      ml: [null, null, null, null, 3],
-      mt: [3, null, null, null, 0],
-    },
-  },
-  footerNav: {
-    listStyle: 'none',
-    // flexDirection: ['column', null, null, null, 'row'],
-    m: ['25px 0 0', null, null, null, 0],
-    p: 0,
-    li: {
-      '+ li': {
-        ml: [3, null, null, null, 4],
-      },
-      a: {
-        color: 'white',
-        cursor: 'pointer',
-        textDecoration: 'none',
-        fontSize: [1, null, null, 2],
-      },
-    },
-  },
+          {/* Use cases Section */}
+          <div>
+            <h3 className="font-semibold mb-4">Use cases</h3>
+            <ul className="space-y-2">
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Customer experience</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Sales enablement</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Meeting assistants</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Media</li>
+            </ul>
+          </div>
+
+          {/* Developers Section */}
+          <div>
+            <h3 className="font-semibold mb-4">Developers</h3>
+            <ul className="space-y-2">
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Playground</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Documentation</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Discord</li>
+            </ul>
+          </div>
+
+          {/* Resources Section */}
+          <div>
+            <h3 className="font-semibold mb-4">Resources</h3>
+            <ul className="space-y-2">
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">About us</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Careers</li>
+              <li className="hover:text-[#333333] cursor-pointer transition-colors ease-in-out duration-300">Terms & conditions</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  );
 };
+
+export default Footer;

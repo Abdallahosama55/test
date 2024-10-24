@@ -10,11 +10,8 @@ export default function Layout({ children }) {
     <React.Fragment>
       <Header />
       <main
-        sx={{
-          variant: 'layout.main',
-          
-        }}
-        className=' overflow-x-hidden'
+    
+        className=' overflow-x-hidden '
       >
         {children}
       </main>

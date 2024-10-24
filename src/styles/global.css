@@ -92,3 +92,14 @@ background:cover;
   animation: slideUp 1s ease-out;
 }
 
+.gradient-text-header {
+  background: linear-gradient(90deg, #3132A9, #8485E6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.gradient-bg-header{
+  background: linear-gradient(180deg, rgba(132, 133, 230, 0.17) 0%, rgba(49, 50, 169, 0.17) 18%, rgba(255, 255, 255, 0.17) 100%);
+}

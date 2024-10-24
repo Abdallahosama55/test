@@ -82,7 +82,7 @@ export default function Header() {
     ));
 
   return (
-    <div className="fixed w-full z-50 backdrop-blur-md bg-white/60">
+    <div className="fixed w-full z-50 backdrop-blur-md   bg-white/60 bg-black">
       <nav className="flex justify-between lg:mx-24 mx-6 py-5">
         <Logo />
 
